@@ -78,7 +78,7 @@ public class ServerSideCallbacks extends HttpServlet{
             httpclient.executeMethod(post);
             tokenResponse = post.getResponseBodyAsString();
             post.releaseConnection();
- 
+		System.out.println("tEST lOG: " + post.getPath());		
             System.err.println("tokenResponse: " + tokenResponse);
         } catch (Exception e) {
         		throw new ServletException(e);
