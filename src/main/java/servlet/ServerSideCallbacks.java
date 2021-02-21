@@ -40,7 +40,7 @@ public class ServerSideCallbacks extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws 
         ServletException, IOException {
-
+return;
     		//System.setProperty("javax.net.ssl.trustStore",".jdk/jre/lib/security/cacerts");
     		//System.setProperty("javax.net.ssl.trustStorePassword", System.getenv("CACERTS_PASSWORD"));
 	    //   -Djavax.net.ssl.keyStore=mySrvKeystore -Djavax.net.ssl.keyStorePassword=123456
