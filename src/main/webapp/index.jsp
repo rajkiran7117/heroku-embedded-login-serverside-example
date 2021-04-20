@@ -8,11 +8,11 @@
 
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600" type="text/css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
-	<meta name="salesforce-allowed-domains" content="<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>">	
+	
     <meta name="salesforce-community" content="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>">
     <meta name="salesforce-client-id" content="<%= System.getenv("SALESFORCE_CLIENT_ID") %>">
     <meta name="salesforce-redirect-uri" content="https://<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>/_callback">
-    <meta name="salesforce-mode" content="modal-callback">
+    <meta name="salesforce-mode" content="modal">
     <meta name="salesforce-server-callback" content="true">
     <meta name="salesforce-namespace" content="">
     <meta name="salesforce-target" content="#sign-in-link">
@@ -24,7 +24,7 @@
     <meta name="salesforce-mask-redirects" content="false">"
 	<link href="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
 <script src="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
-  <meta name="salesforce-server-starturl" content="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/demo/services/oauth2/authorize?response_type=token& client_id=<%= System.getenv("SALESFORCE_CLIENT_ID") %>&redirect_uri=<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>&state=%2F/testing1.jsp">
+  
   </head>
   
   <body>
