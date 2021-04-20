@@ -23,7 +23,8 @@
     <meta name="salesforce-logout-handler" content="onLogout">
     <meta name="salesforce-mask-redirects" content="false">"
 	<link href="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
-    <script src="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
+<script src="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
+  <meta name="salesforce-server-starturl" content="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/demo/services/oauth2/authorize?response_type=token& client_id=<%= System.getenv("SALESFORCE_CLIENT_ID") %>&redirect_uri=<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>&state=%2F/testing1.jsp">
   </head>
   
   <body>
