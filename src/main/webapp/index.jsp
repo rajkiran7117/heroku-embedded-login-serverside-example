@@ -151,7 +151,7 @@
 
 	function onLogin(identity) {
 		
-		var targetDiv = document.querySelector('sign-in-link');	
+		var targetDiv = document.getElementById('sign-in-link');	
 		
 		var avatar = document.createElement('a'); 
 	 	avatar.href = "javascript:showIdentityOverlay();";
@@ -171,9 +171,11 @@
 		avatar.appendChild(img);
 		avatar.appendChild(username);
 		iddiv.appendChild(avatar);		
-	
-		targetDiv.innerHTML = '';
-		targetDiv.appendChild(iddiv);	
+		if(targetDiv){
+			targetDiv.innerHTML = '';
+			targetDiv.appendChild(iddiv);
+		}
+			
 		
 		var aero = document.getElementById("aero_link");
 		aero.href = "/datasheets/AeroPress-Instr-English-Rev.-D2.pdf";
