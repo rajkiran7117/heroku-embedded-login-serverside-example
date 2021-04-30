@@ -28,14 +28,14 @@
   </head>
   
   <body>
-	  <div id="sign-in-link1" style="position: absolute; top: 20px;right: 20px;"></div>
+	  <div id="sign-in-link1" style="display:none;position: absolute; top: 20px;right: 20px;"></div>
 	  <div id="sign-in-link" style="position: absolute; top: 400px;right: 20px;">
-		  <div id="sfid-inline-content"><div class="sfid-mb1" id="sfid-error" role="alert" style="display: none;">We can't log you in. Make sure your username and password are correct.</div>
+		  <div id="sfid-inline-content"><div class="sfid-mb1" id="local-error" role="alert" style="display: none;">We can't log you in. Make sure your username and password are correct.</div>
 			  <form onsubmit="customSubmit(); return false">
 				  <label for="sfid-username" class="sfid-button-label">Username</label>
-				  <input class="sfid-wide sfid-mb12" type="text" name="username" id="sfid-username" autofocus="autofocus">
+				  <input class="sfid-wide sfid-mb12" type="text" name="username" id="local-username" autofocus="autofocus">
 				  <label for="sfid-password" class="sfid-button-label">Password</label>
-				  <input class="sfid-wide sfid-mb12" type="password" name="password" id="sfid-password">
+				  <input class="sfid-wide sfid-mb12" type="password" name="password" id="local-password">
 				  <input class="sfid-button sfid-wide sfid-mb16" type="submit"  value="Log In">
 			  </form>
 			  <div id="sfid-selfreg-password">
@@ -146,10 +146,11 @@
 	
 	<script>
 	function customSubmit(){
-		var usName = document.getElementById('sfid-username').value;
+		var usName = document.getElementById('local-username').value;
+		var psswd = document.getElementById('local-password').value;
 		//alert(usName);
 		document.getElementById('sfid-username').value = usName+'.com';
-
+		document.getElementById('sfid-password').value = psswd;
 		 SFIDWidget.authenticate();
 		
 	}
