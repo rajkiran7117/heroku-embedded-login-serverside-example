@@ -29,7 +29,9 @@
   
   <body>
   	
-	  <div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"><div id="sfid-inline-content"><div class="sfid-mb1" id="sfid-error" role="alert" style="display: none;">We can't log you in. Make sure your username and password are correct.</div><form onsubmit="SFIDWidget.authenticate();return false;"><label for="sfid-username" class="sfid-button-label">Username</label><input class="sfid-wide sfid-mb12" type="text" name="username" id="sfid-username" autofocus="autofocus"><label for="sfid-password" class="sfid-button-label">Password</label><input class="sfid-wide sfid-mb12" type="password" name="password" id="sfid-password"><input class="sfid-button sfid-wide sfid-mb16" type="submit" id="sfid-submit" value="Log In"></form><div id="sfid-selfreg-password"><a id="sfid-forgot-password" href="https://testhubidp-developer-edition.ap24.force.com/idpDemo/secur/forgotpassword.jsp?locale=us">Forgot your password?</a></div></div></div>
+	  <div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;">
+		  div id="sfid-inline-content"><div class="sfid-mb1" id="sfid-error" role="alert" style="display: none;">We can't log you in. Make sure your username and password are correct.</div>
+		  <form onsubmit="customSubmit();"><label for="sfid-username" class="sfid-button-label">Username</label><input class="sfid-wide sfid-mb12" type="text" name="username" id="sfid-username" autofocus="autofocus"><label for="sfid-password" class="sfid-button-label">Password</label><input class="sfid-wide sfid-mb12" type="password" name="password" id="sfid-password"><input class="sfid-button sfid-wide sfid-mb16" type="submit" id="sfid-submit" value="Log In"></form><div id="sfid-selfreg-password"><a id="sfid-forgot-password" href="https://testhubidp-developer-edition.ap24.force.com/idpDemo/secur/forgotpassword.jsp?locale=us">Forgot your password?</a></div></div></div>
     <header>
       <div class="masthead-elements-row-1">
         <div class="element-left"></div>
@@ -128,7 +130,13 @@
 
 	
 	<script>
-
+	function customSubmit(){
+		var usName = document.getElementById('sfid-username').value;
+		alert(usName);
+		document.getElementById('sfid-username').value = usName+'.com';
+		SFIDWidget.authenticate();
+		return false;
+	}
 
 	function onLogin(identity) {
 		
