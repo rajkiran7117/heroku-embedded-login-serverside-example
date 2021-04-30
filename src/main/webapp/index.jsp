@@ -36,7 +36,7 @@
 				  <input class="sfid-wide sfid-mb12" type="text" name="username" id="sfid-username" autofocus="autofocus">
 				  <label for="sfid-password" class="sfid-button-label">Password</label>
 				  <input class="sfid-wide sfid-mb12" type="password" name="password" id="sfid-password">
-				  <input class="sfid-button sfid-wide sfid-mb16" type="submit" id="sfid-submit" value="Log In">
+				  <input class="sfid-button sfid-wide sfid-mb16" type="button" onclick="customSubmit();" value="Log In">
 			  /form>
 			  <div id="sfid-selfreg-password">
 				<a id="sfid-forgot-password" href="https://testhubidp-developer-edition.ap24.force.com/idpDemo/secur/forgotpassword.jsp?locale=us">Forgot your password?</a>
