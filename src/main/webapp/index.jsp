@@ -163,7 +163,7 @@
 		console.log('login successfull');
 				
 		if(targetDiv){
-			targetDiv.innerHTML = '<h1>Login Successfull</h1>';
+			targetDiv.style.display ='none';
 		}
 		document.getElementById("logoutDiv").style.display = "block";
 	}
@@ -177,7 +177,7 @@
 	
 	function onLogout() {
 		SFIDWidget.init();
-		
+		var targetDiv = document.getElementById("sign-in-link").style.display='block';
 		var aero = document.getElementById("aero_link");
 		aero.href = "#";
 		aero.innerHTML = 'Login for more info';
@@ -189,6 +189,7 @@
 		var chemex = document.getElementById("chemex_link");
 		chemex.href = "#";
 		chemex.innerHTML = 'Login for more info';
+		document.getElementById("logoutDiv").style.display = "none";
 
 	}
 
