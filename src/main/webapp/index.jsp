@@ -152,7 +152,7 @@
 
 	function onLogin(identity) {
 		
-		var targetDiv = document.getElementById('sign-in-link');	
+		var targetDiv = document.getElementById("sign-in-link");	
 		
 		var avatar = document.createElement('a'); 
 	 	avatar.href = "javascript:showIdentityOverlay();";
@@ -168,13 +168,13 @@
 	
 		var iddiv = document.createElement('div'); 
 	 	iddiv.id = "sfid-identity";
-		
+		console.log('login successfull');
 		avatar.appendChild(img);
 		avatar.appendChild(username);
 		iddiv.appendChild(avatar);		
 		if(targetDiv){
-			targetDiv.innerHTML = '';
-			targetDiv.appendChild(iddiv);
+			targetDiv.innerHTML = '<h1>Login Successfull</h1>';
+			//targetDiv.appendChild(iddiv);
 		}
 			
 		
@@ -213,7 +213,7 @@
 		        event.cancelBubble = true
 		    }
 		}
-		console.log('login successfull');
+		
 		var content = document.createElement('div'); 
 	 	content.id = "sfid-content";
 
