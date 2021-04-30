@@ -43,8 +43,11 @@
 			  </div>
 		</div>
 	  </div>
-	  <div id="logoutDiv" style="display:none;">
-		  <a  onclick="javascript:SFIDWidget.logout();SFIDWidget.cancel();" >Logout</button>
+	  <div id="logoutDiv" style="display:none;position: absolute;top: 20px;right: 20px;">
+		  <a  onclick="javascript:SFIDWidget.logout();SFIDWidget.cancel();" >Logout</a>
+	  </div>
+	  <div id="logoutDiv" style="display:none;position: absolute;top: 20px;right: 400px;">
+		  <a  onclick="https://testhubidp-developer-edition.ap24.force.com/idpDemo/apex/ChangePassword?retURL=https://identitytestingsite2.herokuapp.com/" >Reset Password</a>
 	  </div>
 		  
     <header>
