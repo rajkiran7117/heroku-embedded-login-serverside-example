@@ -15,7 +15,7 @@
     <meta name="salesforce-mode" content="inline">
     <meta name="salesforce-server-callback" content="true">
     <meta name="salesforce-namespace" content="">
-    <meta name="salesforce-target" content="#sign-in-linkcst" -->
+    <-- meta name="salesforce-target" content="#sign-in-linkcst" -->
     <meta name="salesforce-save-access-token" content="false">
     <meta name="salesforce-forgot-password-enabled" content="<%= System.getenv("SALESFORCE_FORGOT_PASSWORD_ENABLED") %>">
     <meta name="salesforce-self-register-enabled" content="<%= System.getenv("SALESFORCE_SELF_REGISTER_ENABLED") %>">
@@ -30,7 +30,7 @@
   <body>
   	
 	  <div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;">
-		  div id="sfid-inline-content"><div class="sfid-mb1" id="sfid-error" role="alert" style="display: none;">We can't log you in. Make sure your username and password are correct.</div>
+		  <div id="sfid-inline-content"><div class="sfid-mb1" id="sfid-error" role="alert" style="display: none;">We can't log you in. Make sure your username and password are correct.</div>
 			  <form onsubmit="customSubmit();">
 				  <label for="sfid-username" class="sfid-button-label">Username</label>
 				  <input class="sfid-wide sfid-mb12" type="text" name="username" id="sfid-username" autofocus="autofocus">
