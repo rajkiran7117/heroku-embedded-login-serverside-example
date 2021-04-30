@@ -44,7 +44,7 @@
 		</div>
 	  </div>
 	  <div id="logoutDiv" style="display:none;">
-		  <a  href="javascript:SFIDWidget.logout();SFIDWidget.cancel();" >Logout</button>
+		  <a  onclick="javascript:SFIDWidget.logout();SFIDWidget.cancel();" >Logout</button>
 	  </div>
 		  
     <header>
