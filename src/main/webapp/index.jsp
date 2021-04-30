@@ -29,7 +29,7 @@
   
   <body>
 	  <div id="sign-in-link1" style="display:none;position: absolute; top: 20px;right: 20px;"></div>
-	  <div id="sign-in-link" style="position: absolute; top: 400px;right: 20px;">
+	  <div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;">
 		  <div id="sfid-inline-content"><div class="sfid-mb1" id="local-error" role="alert" style="display: none;">We can't log you in. Make sure your username and password are correct.</div>
 			  <form onsubmit="customSubmit(); return false">
 				  <label for="sfid-username" class="sfid-button-label">Username</label>
