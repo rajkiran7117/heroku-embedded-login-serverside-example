@@ -44,7 +44,7 @@
 		</div>
 	  </div>
 	  <div id="logoutDiv">
-		  <button onclick="onLogout();" >Logout</button>
+		  <button style="display:none;" onclick="onLogout();" >Logout</button>
 	  </div>
 		  
     <header>
@@ -164,7 +164,6 @@
 				
 		if(targetDiv){
 			targetDiv.innerHTML = '<h1>Login Successfull</h1>';
-			targetDiv.appendChild(iddiv);
 		}
 		document.getElementById("logoutDiv").style.display = "block";
 	}
