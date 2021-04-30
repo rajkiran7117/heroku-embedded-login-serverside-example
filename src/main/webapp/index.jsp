@@ -46,8 +46,8 @@
 	  <div id="logoutDiv" style="display:none;position: absolute;top: 20px;right: 20px;">
 		  <a  onclick="javascript:SFIDWidget.logout();SFIDWidget.cancel();" >Logout</a>
 	  </div>
-	  <div id="logoutDiv" style="display:none;position: absolute;top: 20px;right: 400px;">
-		  <a  onclick="https://testhubidp-developer-edition.ap24.force.com/idpDemo/apex/ChangePassword?retURL=https://identitytestingsite2.herokuapp.com/" >Reset Password</a>
+	  <div id="resetDiv" style="display:none;position: absolute;top: 20px;right: 400px;">
+		  <a  href="https://testhubidp-developer-edition.ap24.force.com/idpDemo/apex/ChangePassword?retURL=https://identitytestingsite2.herokuapp.com/" >Reset Password</a>
 	  </div>
 		  
     <header>
@@ -169,6 +169,8 @@
 			targetDiv.style.display ='none';
 		}
 		document.getElementById("logoutDiv").style.display = "block";
+		document.getElementById("resetDiv").style.display = "block";
+		
 	}
 	
 	
@@ -193,6 +195,7 @@
 		chemex.href = "#";
 		chemex.innerHTML = 'Login for more info';
 		document.getElementById("logoutDiv").style.display = "none";
+		document.getElementById("resetDiv").style.display = "none";
 
 	}
 
