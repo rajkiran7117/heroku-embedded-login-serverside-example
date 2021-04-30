@@ -16,7 +16,7 @@
     <meta name="salesforce-server-callback" content="true">
     <meta name="salesforce-namespace" content="">
     <meta name="salesforce-target" content="#sign-in-link">
-    <meta name="salesforce-save-access-token" content="true">
+    <meta name="salesforce-save-access-token" content="false">
     <meta name="salesforce-forgot-password-enabled" content="<%= System.getenv("SALESFORCE_FORGOT_PASSWORD_ENABLED") %>">
     <meta name="salesforce-self-register-enabled" content="<%= System.getenv("SALESFORCE_SELF_REGISTER_ENABLED") %>">
     <meta name="salesforce-login-handler" content="onLogin">
