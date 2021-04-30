@@ -43,8 +43,8 @@
 			  </div>
 		</div>
 	  </div>
-	  <div id="logoutDiv">
-		  <button style="display:none;" onclick="onLogout();" >Logout</button>
+	  <div id="logoutDiv" style="display:none;">
+		  <button  onclick="onLogout();" >Logout</button>
 	  </div>
 		  
     <header>
