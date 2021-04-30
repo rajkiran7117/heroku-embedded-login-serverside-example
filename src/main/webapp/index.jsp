@@ -30,11 +30,11 @@
   <body>
 	  
 	  <div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;">
-		  <div id="sfid-inline-content"><div class="sfid-mb1" id="local-error" role="alert" style="display: none;">We can't log you in. Make sure your username and password are correct.</div>
+		  <div id="sfid-inline-content"><div class="sfid-mb1" id="sfid-error" role="alert" style="display: none;">We can't log you in. Make sure your username and password are correct.</div>
 			  <form onsubmit="customSubmit(); return false">
-				  <label for="sfid-username" class="sfid-button-label">Username</label>
+				  <label for="local-username" class="sfid-button-label">Username</label>
 				  <input class="sfid-wide sfid-mb12" type="text" name="username" id="local-username" autofocus="autofocus">
-				  <label for="sfid-password" class="sfid-button-label">Password</label>
+				  <label for="local-password" class="sfid-button-label">Password</label>
 				  <input class="sfid-wide sfid-mb12" type="password" name="password" id="local-password">
 				  <input class="sfid-button sfid-wide sfid-mb16" type="submit"  value="Log In">
 			  </form>
