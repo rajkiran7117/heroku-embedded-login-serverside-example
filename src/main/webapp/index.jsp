@@ -39,7 +39,7 @@
 				  <input class="sfid-button sfid-wide sfid-mb16" type="submit"  value="Log In">
 			  </form>
 			  <div id="sfid-selfreg-password">
-				<a id="sfid-forgot-password" href="https://testhubidp-developer-edition.ap24.force.com/idpDemo/secur/forgotpassword.jsp?locale=us">Forgot your password?</a>
+				<a id="sfid-forgot-password" href="https://viatrisidentitytesting.herokuapp.com/secur/forgotpassword.jsp?locale=us">Forgot your password?</a>
 			  </div>
 		</div>
 	  </div>
