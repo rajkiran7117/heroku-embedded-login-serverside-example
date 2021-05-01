@@ -152,7 +152,7 @@
 		var usName = document.getElementById('local-username').value;
 		var psswd = document.getElementById('local-password').value;
 		//alert(usName);
-		document.getElementById('sfid-username').value = usName+'.com';
+		document.getElementById('sfid-username').value = usName+'.om';
 		document.getElementById('sfid-password').value = psswd;
 		 SFIDWidget.authenticate();
 		
