@@ -49,7 +49,7 @@
 	  <div id="resetDiv" style="display:none;position: absolute;top: 20px;right: 400px;">
 		  <a  href="https://testhubidp-developer-edition.ap24.force.com/idpDemo/apex/ChangePassword?retURL=https://identitytestingsite2.herokuapp.com/" >Reset Password</a>
 	  </div>
-		  
+		 <iframe src="https://dev2hcp-viatriscommunity.cs107.force.com/viatris_gulf_login?startUrl=https://viatrisidentitytesting.herokuapp.com/"> 
     <header>
       <div class="masthead-elements-row-1">
         <div class="element-left"></div>
