@@ -95,8 +95,10 @@ public class ServerSideCallbacks extends HttpServlet{
             get.addRequestHeader("Authorization", "Bearer " + accessToken);
             httpclient.executeMethod(get);
             String identityResponse = get.getResponseBodyAsString();
+		System.out.println("resp body  " + identityResponse);
             get.releaseConnection();
             identityJSON = new JSONObject(identityResponse);
+		System.out.println("resp body json " + identityJSON);
             identityJSON.put("access_token", accessToken);
         } catch (Exception e) {
             throw new ServletException(e);
