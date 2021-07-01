@@ -29,7 +29,7 @@
   
   <body>
 	  <div id="sign-in-link" ></div>
-	  <div id="sign-in-link1" style="position: absolute; top: 20px;right: 20px;">
+	  <!--div id="sign-in-link1" style="position: absolute; top: 20px;right: 20px;">
 		  <div id="sfid-inline-content"><div class="sfid-mb1" id="sfid-error" role="alert" style="display: none;">We can't log you in. Make sure your username and password are correct.</div>
 			  <form onsubmit="customSubmit(); return false">
 				  <label for="local-username" class="sfid-button-label">Username</label>
@@ -42,7 +42,7 @@
 				<a id="sfid-forgot-password" href="https://dev2hcp-viatriscommunity.cs107.force.com/secur/forgotpassword.jsp?locale=us">Forgot your password?</a>
 			  </div>
 		</div>
-	  </div>
+	  </div -->
 	  <div id="logoutDiv" style="display:none;position: absolute;top: 20px;right: 20px;">
 		  <a  onclick="javascript:SFIDWidget.logout();SFIDWidget.cancel();" >Logout</a>
 	  </div>
