@@ -104,14 +104,14 @@ public class ServerSideCallbacks extends HttpServlet{
             throw new ServletException(e);
         }
         
-	response.sendRedirect("/index.jsp");
-        //response.setContentType("text/html; charset=utf-8");
-        //PrintWriter out = response.getWriter();
+	//response.sendRedirect("/index.jsp");
+        response.setContentType("text/html; charset=utf-8");
+        PrintWriter out = response.getWriter();
 
         // Mode passed from redirect-uri
        //  Notice that we’re using base64 encoded
-        String outputStr =  "<html><head>\n" +
-                "<meta name=\"salesforce-community\" content=\""+ communityUrl +"\">\n" +
+        String outputStr =  "<html><head>\n" +"<script> if(popupWindow){ popupWindow.close();} </script>"+
+                /*"<meta name=\"salesforce-community\" content=\""+ communityUrl +"\">\n" +
 //                "<meta name=\"salesforce-mode\" content=\""+ request.getParameter("mode") +"-callback\">\n" +
 				"<meta name=\"salesforce-mode\" content=\"" + System.getenv("SALESFORCE_MODE") + "-callback\">\n" +
                 "<meta name=\"salesforce-server-callback\" content=\"true\">\n" +
@@ -119,9 +119,9 @@ public class ServerSideCallbacks extends HttpServlet{
                 Base64.getEncoder().encodeToString(identityJSON.toString().getBytes(StandardCharsets.UTF_8))+"'>\n" +
                 "<meta name=\"salesforce-server-starturl\" content='" + startURL +"'>\n" +
                 "<meta name=\"salesforce-target\" content= \"#salesforce-login\">\n"+
-                "<meta name=\"salesforce-allowed-domains\" content=\"" + System.getenv("SALESFORCE_HEROKUAPP_URL") + "\">\n" +
+                "<meta name=\"salesforce-allowed-domains\" content=\"" + System.getenv("SALESFORCE_HEROKUAPP_URL") + "\">\n" +*/
                 "</head><body></body></html>";
-        //out.write(outputStr);
+        out.write(outputStr);
     }
 
 }
