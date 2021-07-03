@@ -14,8 +14,9 @@
   
   <body>
 	  <div id="sign-in-link" style="display:none;" ></div>
-	  <div id="custom-login-button"><input style="float:left;" type="button" onclick="openPopup();"  value="custom Login"/></div><div id="logoutDiv" style="display:none;position: absolute;top: 20px;right: 20px;">
-		  <a  onclick="window.location.href=" >Logout</a>
+	  <div id="custom-login-button"><input style="float:left;" type="button" onclick="openPopup();"  value="custom Login"/></div>
+	  <div id="logoutDiv" style="display:none;position: absolute;top: 20px;right: 20px;">
+		  <a  onclick="window.location.href='https://dev2hcp-viatriscommunity.cs107.force.com/secur/logout.jsp'" >Logout</a>
 	  </div>
 	  <div id="resetDiv" style="display:none;position: absolute;top: 20px;right: 400px;">
 		  <a  href="https://testhubidp-developer-edition.ap24.force.com/idpDemo/apex/ChangePassword?retURL=https://identitytestingsite2.herokuapp.com/" >Reset Password</a>
