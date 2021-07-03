@@ -28,7 +28,7 @@
   </head>
   
   <body>
-	  <div id="sign-in-link" ></div>
+	  <div id="sign-in-link" style="display:none;" ></div>
 	  <div><input class="sfid-button sfid-wide sfid-mb16" onclick="openPopup();"  value="custom Login"></div>
 	  <!--div id="sign-in-link1" style="position: absolute; top: 20px;right: 20px;">
 		  <div id="sfid-inline-content"><div class="sfid-mb1" id="sfid-error" role="alert" style="display: none;">We can't log you in. Make sure your username and password are correct.</div>
@@ -44,7 +44,7 @@
 			  </div>
 		</div>
 	  </div -->
-	  <iframe src="https://viatrisconnect.force.com/services/oauth2/authorize?response_type=code&client_id=3MVG9lsAlIP.W_V9otvIK.bMmeXjXYwNfGR5HMtRM4sNDxzmLG3UudlM1ShP3Nw70UJfMHnODa0Dp99UjpiYh&redirect_uri=https%3A%2F%2Fwww.viatrisconnectgulf.com%2FHome&state=https%3A%2F%2Fwww.viatrisconnectgulf.com%2F" height="300px;"/>
+	  
 	  <div id="logoutDiv" style="display:none;position: absolute;top: 20px;right: 20px;">
 		  <a  onclick="javascript:SFIDWidget.logout();SFIDWidget.cancel();" >Logout</a>
 	  </div>
