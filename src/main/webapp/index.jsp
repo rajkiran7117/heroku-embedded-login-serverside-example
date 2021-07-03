@@ -9,44 +9,13 @@
     <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,600" type="text/css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
 	
-    <meta name="salesforce-community" content="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>">
-    <meta name="salesforce-client-id" content="<%= System.getenv("SALESFORCE_CLIENT_ID") %>">
-    <meta name="salesforce-redirect-uri" content="https://<%= System.getenv("SALESFORCE_HEROKUAPP_URL") %>/_callback">
-    <meta name="salesforce-mode" content="<%= System.getenv("SALESFORCE_MODE") %>">
-    <meta name="salesforce-server-callback" content="true">
-    <meta name="salesforce-namespace" content="">
-    <meta name="salesforce-target" content="#sign-in-link">
-    <meta name="salesforce-save-access-token" content="false">
-    <meta name="salesforce-forgot-password-enabled" content="<%= System.getenv("SALESFORCE_FORGOT_PASSWORD_ENABLED") %>">
-    <meta name="salesforce-self-register-enabled" content="<%= System.getenv("SALESFORCE_SELF_REGISTER_ENABLED") %>">
-    <meta name="salesforce-login-handler" content="onLogin">
-    <meta name="salesforce-logout-handler" content="onLogout">
-    <meta name="salesforce-mask-redirects" content="<%= System.getenv("SALESFORCE_MASK_REDIRECT") %>">
-	<link href="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
-<script src="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=javascript_widget&min=false" async defer></script>
-  
+   
   </head>
   
   <body>
 	  <div id="sign-in-link" style="display:none;" ></div>
-	  <div><input class="sfid-button sfid-wide sfid-mb16" onclick="openPopup();"  value="custom Login"></div>
-	  <!--div id="sign-in-link1" style="position: absolute; top: 20px;right: 20px;">
-		  <div id="sfid-inline-content"><div class="sfid-mb1" id="sfid-error" role="alert" style="display: none;">We can't log you in. Make sure your username and password are correct.</div>
-			  <form onsubmit="customSubmit(); return false">
-				  <label for="local-username" class="sfid-button-label">Username</label>
-				  <input class="sfid-wide sfid-mb12" type="text" name="username" id="local-username" autofocus="autofocus">
-				  <label for="local-password" class="sfid-button-label">Password</label>
-				  <input class="sfid-wide sfid-mb12" type="password" name="password" id="local-password">
-				  <input class="sfid-button sfid-wide sfid-mb16" type="submit"  value="Log In">
-			  </form>
-			  <div id="sfid-selfreg-password">
-				<a id="sfid-forgot-password" href="https://dev2hcp-viatriscommunity.cs107.force.com/secur/forgotpassword.jsp?locale=us">Forgot your password?</a>
-			  </div>
-		</div>
-	  </div -->
-	  
-	  <div id="logoutDiv" style="display:none;position: absolute;top: 20px;right: 20px;">
-		  <a  onclick="javascript:SFIDWidget.logout();SFIDWidget.cancel();" >Logout</a>
+	  <div><input class="sfid-button sfid-wide sfid-mb16" style="float:left;" onclick="openPopup();"  value="custom Login"></div><div id="logoutDiv" style="display:none;position: absolute;top: 20px;right: 20px;">
+		  <a  onclick="window.location.href=" >Logout</a>
 	  </div>
 	  <div id="resetDiv" style="display:none;position: absolute;top: 20px;right: 400px;">
 		  <a  href="https://testhubidp-developer-edition.ap24.force.com/idpDemo/apex/ChangePassword?retURL=https://identitytestingsite2.herokuapp.com/" >Reset Password</a>
