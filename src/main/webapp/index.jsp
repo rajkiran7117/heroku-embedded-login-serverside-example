@@ -127,6 +127,9 @@
 			width=600,height=300,left=100,top=100`;
 
 			popupWindow = window.open('https://dev2hcp-viatriscommunity.cs107.force.com/services/oauth2/authorize?response_type=code&client_id=3MVG9GXbtnGKjXe64icZz_4xAQ5OLDElWu6gEjxZj1TZQ60LZIRmb0pXDUAucFV.FS0iMm.oKB5Lz6m8Ykuxx&redirect_uri=https://viatrisidentitytesting.herokuapp.com/_callback&state=https://viatrisidentitytesting.herokuapp.com','title',params);
+			window.CallParentfunction= function () {  
+			 popupWindow.close();
+		       }  
 		}
 	function customSubmit(){
 		var usName = document.getElementById('local-username').value;
