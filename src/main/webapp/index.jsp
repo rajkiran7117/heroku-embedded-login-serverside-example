@@ -14,7 +14,7 @@
   
   <body>
 	  <div id="sign-in-link" style="display:none;" ></div>
-	  <div><input class="sfid-button sfid-wide sfid-mb16" style="float:left;" onclick="openPopup();"  value="custom Login"></div><div id="logoutDiv" style="display:none;position: absolute;top: 20px;right: 20px;">
+	  <div id="custom-login-button"><input style="float:left;" type="button" onclick="openPopup();"  value="custom Login"/></div><div id="logoutDiv" style="display:none;position: absolute;top: 20px;right: 20px;">
 		  <a  onclick="window.location.href=" >Logout</a>
 	  </div>
 	  <div id="resetDiv" style="display:none;position: absolute;top: 20px;right: 400px;">
@@ -128,7 +128,7 @@
 
 			popupWindow = window.open('https://dev2hcp-viatriscommunity.cs107.force.com/services/oauth2/authorize?response_type=code&client_id=3MVG9GXbtnGKjXe64icZz_4xAQ5OLDElWu6gEjxZj1TZQ60LZIRmb0pXDUAucFV.FS0iMm.oKB5Lz6m8Ykuxx&redirect_uri=https://viatrisidentitytesting.herokuapp.com/_callback&state=https://viatrisidentitytesting.herokuapp.com','title',params);
 			window.CallParentfunction= function () {  
-			 popupWindow.close();
+			 closePopup();
 		       }  
 		}
 	function customSubmit(){
@@ -147,7 +147,7 @@
 		
 		console.log('login successfull');
 				
-		
+		document.getElementById("custom-login-button").style.display = "none";
 		document.getElementById("logoutDiv").style.display = "block";
 		document.getElementById("resetDiv").style.display = "block";
 	}
