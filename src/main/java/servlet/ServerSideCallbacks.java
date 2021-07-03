@@ -104,9 +104,9 @@ public class ServerSideCallbacks extends HttpServlet{
             throw new ServletException(e);
         }
         
-
-        response.setContentType("text/html; charset=utf-8");
-        PrintWriter out = response.getWriter();
+	response.sendRedirect("/index.jsp");
+        //response.setContentType("text/html; charset=utf-8");
+        //PrintWriter out = response.getWriter();
 
         // Mode passed from redirect-uri
        //  Notice that we’re using base64 encoded
@@ -121,7 +121,7 @@ public class ServerSideCallbacks extends HttpServlet{
                 "<meta name=\"salesforce-target\" content= \"#salesforce-login\">\n"+
                 "<meta name=\"salesforce-allowed-domains\" content=\"" + System.getenv("SALESFORCE_HEROKUAPP_URL") + "\">\n" +
                 "</head><body></body></html>";
-        out.write(outputStr);
+        //out.write(outputStr);
     }
 
 }
