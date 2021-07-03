@@ -121,13 +121,12 @@
 
 	
 	<script>
-		let newWindow ;
+		let popupWindow ;
 		function openPopup(){
 			let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
 			width=600,height=300,left=100,top=100`;
 
-			newWindow ='';
-			window.open('https://dev2hcp-viatriscommunity.cs107.force.com/services/oauth2/authorize?response_type=code&client_id=3MVG9GXbtnGKjXe64icZz_4xAQ5OLDElWu6gEjxZj1TZQ60LZIRmb0pXDUAucFV.FS0iMm.oKB5Lz6m8Ykuxx&redirect_uri=https://viatrisidentitytesting.herokuapp.com/_callback&display=popup&state=https://viatrisidentitytesting.herokuapp.com');
+			popupWindow = window.open('https://dev2hcp-viatriscommunity.cs107.force.com/services/oauth2/authorize?response_type=code&client_id=3MVG9GXbtnGKjXe64icZz_4xAQ5OLDElWu6gEjxZj1TZQ60LZIRmb0pXDUAucFV.FS0iMm.oKB5Lz6m8Ykuxx&redirect_uri=https://viatrisidentitytesting.herokuapp.com/_callback&state=https://viatrisidentitytesting.herokuapp.com','title',params);
 		}
 	function customSubmit(){
 		var usName = document.getElementById('local-username').value;
@@ -138,11 +137,17 @@
 		 SFIDWidget.authenticate();
 		
 	}
-	$(document).ready(function() {
-		if(newWindow){
-			newWindow.close();
+	function closePopup(){
+		if(popupWindow){
+			popupWindow.close();
 		}
-	});
+		
+		console.log('login successfull');
+				
+		
+		document.getElementById("logoutDiv").style.display = "block";
+		document.getElementById("resetDiv").style.display = "block";
+	}
 	
 	function onLogin(identity) {
 		
