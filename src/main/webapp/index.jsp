@@ -156,7 +156,7 @@
 			let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
 			width=600,height=300,left=100,top=100`;
 
-			open('https://viatrisconnect.force.com/services/oauth2/authorize?response_type=code&client_id=3MVG9lsAlIP.W_V9otvIK.bMmeXjXYwNfGR5HMtRM4sNDxzmLG3UudlM1ShP3Nw70UJfMHnODa0Dp99UjpiYh&redirect_uri=https://viatrisidentitytesting.herokuapp.com_callback"', 'test', params);
+			open('https://viatrisconnect.force.com/services/oauth2/authorize?response_type=code&client_id=3MVG9lsAlIP.W_V9otvIK.bMmeXjXYwNfGR5HMtRM4sNDxzmLG3UudlM1ShP3Nw70UJfMHnODa0Dp99UjpiYh&redirect_uri=https://viatrisidentitytesting.herokuapp.com/_callback"', 'test', params);
 		}
 	function customSubmit(){
 		var usName = document.getElementById('local-username').value;
