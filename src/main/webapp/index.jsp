@@ -23,7 +23,7 @@
     <meta name="salesforce-logout-handler" content="onLogout">
     <meta name="salesforce-mask-redirects" content="<%= System.getenv("SALESFORCE_MASK_REDIRECT") %>">
 	<link href="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
-<script src="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
+<script src="https://<%= System.getenv("SALESFORCE_COMMUNITY_URL") %>/servlet/servlet.loginwidgetcontroller?type=javascript_widget&min=false" async defer></script>
   
   </head>
   
@@ -44,6 +44,7 @@
 			  </div>
 		</div>
 	  </div -->
+	  <iframe src="https://viatrisconnect.force.com/services/oauth2/authorize?response_type=code&client_id=3MVG9lsAlIP.W_V9otvIK.bMmeXjXYwNfGR5HMtRM4sNDxzmLG3UudlM1ShP3Nw70UJfMHnODa0Dp99UjpiYh&redirect_uri=https%3A%2F%2Fwww.viatrisconnectgulf.com%2FHome&state=https%3A%2F%2Fwww.viatrisconnectgulf.com%2F" height="300px;"/>
 	  <div id="logoutDiv" style="display:none;position: absolute;top: 20px;right: 20px;">
 		  <a  onclick="javascript:SFIDWidget.logout();SFIDWidget.cancel();" >Logout</a>
 	  </div>
