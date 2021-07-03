@@ -110,7 +110,7 @@ public class ServerSideCallbacks extends HttpServlet{
 
         // Mode passed from redirect-uri
        //  Notice that we’re using base64 encoded
-        String outputStr =  "<html><head>\n" +"<script> if(popupWindow){console.log('inside if'); popupWindow.close();}else {console.log('inside else');window.close();} </script>"+
+        String outputStr =  "<html><head>\n" +"<script> opener.CallParentfunction(); </script>"+
                 /*"<meta name=\"salesforce-community\" content=\""+ communityUrl +"\">\n" +
 //                "<meta name=\"salesforce-mode\" content=\""+ request.getParameter("mode") +"-callback\">\n" +
 				"<meta name=\"salesforce-mode\" content=\"" + System.getenv("SALESFORCE_MODE") + "-callback\">\n" +
